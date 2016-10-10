@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 feature 'enter names' do
-  scenario 'two users enter their usernames' do
+  scenario 'two players enter their names' do
     visit '/'
     fill_in 'player_1', with: "Bill"
     fill_in 'player_2', with: "Ted"
