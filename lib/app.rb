@@ -3,7 +3,7 @@ require 'sinatra/base'
 class SuperBattle < Sinatra::Base
   get '/' do
     'Hello SuperBattle!'
-    erb: :index
+    erb :index
   end
 
   # start the server if ruby file executed directly
