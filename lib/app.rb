@@ -21,7 +21,9 @@ class SuperBattle < Sinatra::Base
   end
 
   get '/attack' do
-    'Bill attacked Ted and they lost 1hp'
+    @player_1 = session[:player_1]
+    @player_2 = session[:player_2]
+    erb :attack
   end
 
   # start the server if ruby file executed directly
