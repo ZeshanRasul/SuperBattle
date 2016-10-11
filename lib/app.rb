@@ -20,6 +20,10 @@ class SuperBattle < Sinatra::Base
     erb :play
   end
 
+  get '/attack' do
+    'Bill attacked Ted and they lost 1hp'
+  end
+
   # start the server if ruby file executed directly
   run! if app_file == $0
 end
