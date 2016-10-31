@@ -1,5 +1,5 @@
 require 'sinatra/base'
-
+require_relative 'Player'
 class SuperBattle < Sinatra::Base
 
   enable :sessions
