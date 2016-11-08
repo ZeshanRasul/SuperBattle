@@ -12,16 +12,16 @@ describe Player do
 
   describe '#hitpoints' do
     it "it returns it's hp" do
-      expect(pikachu.hp).to eq 20
+      expect(pikachu.hp).to eq described_class::DEFAULT_HIT_POINTS
     end
   end
 
-  describe '#attack' do
-    it 'damages the opponent' do
-      expect(squirtle).to receive(:take_damage)
-      pikachu.attack(squirtle)
-    end
-  end
+  # describe '#attack' do
+  #   it 'damages the opponent' do
+  #     expect(squirtle).to receive(:take_damage)
+  #     pikachu.attack(squirtle)
+  #   end
+  # end
 
   describe '#take damage' do
     it 'reduces the players hitpoints' do
